@@ -7,7 +7,7 @@
 .btn-cancelar{ @apply bg-red-400 border-red-600}
 h1{ @apply text-sky-900 font-semibold border-b-2  }
 p { @apply mb-5}
-.col3{ @apply text-gray-600 inline-block bg-blue-50 sm:w-[49.6%] md:w-[32.5%] lg:w-[32.5%] pt-5 px-2  sm:mb-3  border-l-8 border-pink-700 }
+.col3{ @apply text-gray-600 inline-block bg-blue-50  md:w-[32.5%] lg:w-[32.5%] pt-5 px-2  sm:mb-3  border-l-8 border-pink-700 }
 .col5{ @apply text-gray-600 inline-block bg-cyan-50 md:w-[49.6%] lg:w-[19.5%] pt-5 px-2 md:mb-3 sm:mb-3  border-l-8 border-cyan-700 }
 
 }
