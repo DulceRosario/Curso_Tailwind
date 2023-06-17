@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+.boton{ @apply bg-stone-100 px-2 py-1 text-sm rounded-sm border-2 border-emerald-300 hover:bg-emerald-500 transition-all }
+.btn-cancelar{ @apply bg-red-400 border-red-600}
+h1{ @apply text-sky-900 font-semibold border-b-2  }
+p{ @apply mb-5}
+
+}
