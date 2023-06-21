@@ -7,58 +7,73 @@
     <link href="main.css" rel="stylesheet">
 </head>
 
-<body >
-    <form action="" class="bg-gray-300 m-10">
-    
-      
-        <div class=" md:flex flex-wrap bg-rojo ">
-            <!-- dos de 50% -->
-            <label for="" class="h-[80px] md:w-1/2 p-2 ">Nombre               <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+<body>
+    <form action="" class="bg-gray-300 m-10 p-6">
+
+        <div class=" md:flex flex-wrap py-3">
+
+            <label for="" class=" md:w-3/12  ">Número de expediente: <input type="text"
+                    class=" p-1 pl-2 w-full -mb-1">
             </label>
-            <label for="" class="h-[80px] md:w-1/2 p-2">Apellido
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            <label  class=" md:w-5/12 ">Año del expediente:
+                <div class="grid grid-cols-3 gap-3 w-full">
+                    <div class="flex flex-auto"> <span class="w-1/4 mr-2 text-right">Del: </span>  <input class="w-3/4 max-h-8 text-center text-gray-300" type="text" value="AAA" > </div>
+                    <div class="flex"> <span class="w-1/4 text-right mr-2">al:  </span>  <input class="w-3/4 max-h-8 text-center text-gray-300" type="text" value="AAA"> </div>
+                    <div class="flex"><input type="checkbox"> Expediente relevante</div>
+
+                </div>
             </label>
-            <!-- uno del 100% -->
-            <label for="" class="h-[80px] ">¿Cual es tu dirección?
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+
+            <label for="" class=" md:w-4/12  ">Texto en observaciones del expediente:
+                <input type="text" class="  w-full h-20 -mb-1">
             </label>
-     
-            <!-- otro del 100% -->
-            <label for="" class="h-[80px] ">¿Cual es tu dirección?
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba su dirección por favor</small>
-            </label>
+        </div>
+        <div class=" md:flex flex-wrap py-3">
            
-    
-            <!-- 3 de 1/6 y 1 de 2/6 (un espacio vacio de 1/6) -->
-            
-            <label for="" class="h-[80px]  ">Ciudad
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Especifique un ciudad</small>
+            <!-- uno del 100% -->
+            <label for="" class=" w-1/2 ">Tipo de sesión
+                <select  class=" p-1 pl-2 w-full -mb-1">
+                    <option value="">TODOS</option>
+                    <option value="">PACIENTES</option>
+                    <option value="">DOCTORES</option>
+ 
+                </select>
+             </label>
+
+            <!-- otro del 100% -->
+            <label  class=" md:w-1/2 ">Año del expediente:
+                <div class="grid grid-cols-2 gap-3 w-full">
+                    <div class="flex flex-auto"> <span class="w-1/4 text-right mr-2">Del: </span>  <input class="w-3/4 max-h-8" type="date"> </div>
+                    <div class="flex"> <span class="w-1/4 text-right mr-2">al: </span>  <input class="w-3/4 max-h-8" type="date"> </div>
+                 
+                </div>
+
+
+
+        </div>
+
+        <div class=" flex flex-wrap py-3">
+           
+            <!-- uno del 100% -->
+            <label for="" class=" w-full md:w-2/12 ">Cuenta con asientos
+                <input type="checkbox" name="" id="">
+      
             </label>
-            <label for="" class="h-[80px] ">CP
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba un código postal válido</small>
+
+            <label for="" class=" md:w-5/12 md:px-3">Texto en observaciones del expediente:
+                <input type="text" class="  w-full h-20 ">
+            </label>          
+            <label for="" class=" md:w-5/12  ">Texto en observaciones del expediente:
+                <input type="text" class="  w-full h-20 -mb-1">
             </label>
-            <label for="" class="h-[80px]  ">Dirección secundaria
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Escriba su dirección por favor</small>
-            </label>
-            <label for="" class="h-[80px]  ">País
-                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
-                <small class="text-rose-500 ">Debe elegir un país</small>
-            </label>
-            <div class="border">
-                <label for="" class=""> <input type="radio" name="memeber" class="border-4 border-red-500" />Miembro actual </label>
-                <label for="" class=""> <input type="radio" name="member" class="border" />Miembro x </label>
-              </div>
-    
+
+        </div>
+
+        <div class="w-full flex mt-2">
+            <button type="button" class="mx-auto text-white font-semibold bg-blue-950 hover:bg-blue-800 hover:text-blue-200 p-2 shadow-md"> Limpiar Filtros </button>
         </div>
     </form>
-    
+
 </body>
 
 </html>
