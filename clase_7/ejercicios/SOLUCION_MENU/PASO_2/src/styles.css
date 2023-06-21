@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+.topnav { @apply overflow-hidden flex flex-nowrap bg-zinc-800;}
+
+.topnav a { @apply float-left block  hover:bg-slate-100 text-white hover:text-black text-center py-[14px] px-[16px] no-underline text-[17px]  active:text-white }
+
+.topnav a.active{ @apply bg-green-600 }
+.topnav a:not(:first-child) { @apply hidden;}
+.topnav a.icon { @apply float-right block md:invisible }
+
+.topnav.responsive { @apply relative;}
+
+.topnav.responsive .icon { @apply absolute right-0 top-0}
+
+.topnav.responsive a { @apply float-none block text-left ; }
+
+.topnav a:not(:first-child) { @apply md:block }
+
+}

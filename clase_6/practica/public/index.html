@@ -7,37 +7,58 @@
     <link href="main.css" rel="stylesheet">
 </head>
 
-<body class="bg-gradient-to-br grid grid-cols-1  from-purple-200 to-violet-300 ">
-    <header class="bg-red-200 grid grid-cols-1 ">
-        <div class="col-auto"> <img src=" images/logo.png" class="h-28" alt="logo"> </div>
-        <nav class="grid grid-cols-6 gap-1 md:grid-cols-12 text-sm font-semibold text-white bg-green-800 ">
-            <button class="col-start-2 md:col-start-5  ">Inicio</button>
-            <button class="col-start-3 md:col-start-6 ">Nosotros</button>
-            <button class="col-start-4 md:col-start-7 ">Productos</button>
-            <button class="col-start-5 md:col-start-8 ">Contacto</button>
-        </nav>
-    </header>
-
-    <main class="w-11/12 mx-auto  opacity-90 py-5  text-center">
-        <div class=" bg-transparent  w-full mb-10 ">
-            <img class="hover:opacity-70 opacity-100 mx-auto border border-1 border-blue-600 shadow shadow-lg shadow-slate-600" src="images/banner.jpg" alt="">
+<body >
+    <form action="" class="bg-gray-300 m-10">
+    
+      
+        <div class=" md:flex flex-wrap bg-rojo ">
+            <!-- dos de 50% -->
+            <label for="" class="h-[80px] md:w-1/2 p-2 ">Nombre               <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            </label>
+            <label for="" class="h-[80px] md:w-1/2 p-2">Apellido
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            </label>
+            <!-- uno del 100% -->
+            <label for="" class="h-[80px] ">¿Cual es tu dirección?
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            </label>
+     
+            <!-- otro del 100% -->
+            <label for="" class="h-[80px] ">¿Cual es tu dirección?
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            </label>
+           
+    
+            <!-- 3 de 1/6 y 1 de 2/6 (un espacio vacio de 1/6) -->
+            
+            <label for="" class="h-[80px]  ">Ciudad
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Especifique un ciudad</small>
+            </label>
+            <label for="" class="h-[80px] ">CP
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba un código postal válido</small>
+            </label>
+            <label for="" class="h-[80px]  ">Dirección secundaria
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Escriba su dirección por favor</small>
+            </label>
+            <label for="" class="h-[80px]  ">País
+                <input type="text" class="border-2 border-pink-400 p-1 pl-2 w-full -mb-1">
+                <small class="text-rose-500 ">Debe elegir un país</small>
+            </label>
+            <div class="border">
+                <label for="" class=""> <input type="radio" name="memeber" class="border-4 border-red-500" />Miembro actual </label>
+                <label for="" class=""> <input type="radio" name="member" class="border" />Miembro x </label>
+              </div>
+    
         </div>
-
-        <div class="grid gap-3 md:grid-cols-3">
-
-            <div class="grid grid-cols-2 border-2 border-red-800"> <span class=" col-start-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore eligendi corporis magni quisquam consequatur reiciendis quod ex aliquid? Odio corporis hic mollitia libero consectetur fuga facilis dolores dicta inventore?</span></div>
-            <div class="grid grid-cols-2 border-2 border-red-800"> <span class=" col-start-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore eligendi corporis magni quisquam consequatur reiciendis quod ex aliquid? Odio corporis hic mollitia libero consectetur fuga facilis dolores dicta inventore?</span></div>
-            <div class="grid grid-cols-2 border-2 border-red-800"> <span class=" col-start-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore eligendi corporis magni quisquam consequatur reiciendis quod ex aliquid? Odio corporis hic mollitia libero consectetur fuga facilis dolores dicta inventore?</span></div>
-
-
-        </div>
-
-
-    </main>
-    <footer class=" bg-violet-950  text-center ">
-        <p class=" text-sm  text-stone-200 font-bold">Todos los derechos reservados @2023
-        </p>
-    </footer>
+    </form>
+    
 </body>
 
 </html>

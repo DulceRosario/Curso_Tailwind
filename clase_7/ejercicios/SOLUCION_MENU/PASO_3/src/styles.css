@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{ @apply bg-clay-800 text-white }
+    #container{ @apply w-11/12 lg:w-[1000px] mx-auto}
+    .destacado > h3{ @apply text-xl font-bold }
+    .destacado > p{ @apply text-[12px] }
+    
+    
+}
+
+
+@layer components{
+
+  .topnav { @apply flex justify-between overflow-hidden  bg-clay-800;}
+  
+  .topnav a { @apply  block hover:bg-clay-100 text-white hover:text-black text-center py-[14px] px-[16px] no-underline text-[17px]  active:text-white }
+  
+  .topnav a.active{ @apply bg-clay-600 }
+  .topnav a:not(:first-child) { @apply hidden;}
+  .topnav a.icon { @apply float-right block md:invisible }
+  
+  .topnav.responsive { @apply flex-col;}
+  
+  .topnav.responsive .icon { @apply absolute right-0 top-[67px]}
+  
+  .topnav.responsive a { @apply block text-center ; }
+  
+  .topnav a:not(:first-child) { @apply md:block }
+  
+}

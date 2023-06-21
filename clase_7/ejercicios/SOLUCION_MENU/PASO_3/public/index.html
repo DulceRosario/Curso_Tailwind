@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- FONT AWESOME para tener iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="flex justify-between p-4 font-domine">
+        <a href="" class="underline">Subscribe</a>
+        <span >Instituto de Ciencias de la Atmófera</span>
+        <a href="" class="rounded-md border border-white px-2 py-1">Sign up</a>
+      </header>
+      <nav class="border border-l-0 border-r-0 border-white">
+        <div class="topnav" id="myTopnav">
+          <a href="#" class="active">World</a>
+          <a href="#">U.S.</a>
+          <a href="#">Technology</a>
+          <a href="#">Design</a>
+          <a href="#">Culture</a>
+          <a href="#">Business</a>
+          <a href="#">Politics</a>
+          <a href="#">Opinion</a>
+          <a href="#">Science</a>
+          <a href="#">Health</a>
+          <a href="#">Style</a>
+          <a href="#">Travel</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+      </nav>
+      <div id="container">
+        <main class="mt-10  ">
+            <!-- ES DE UNA COLUMNA -->
+            <div class="bg-zinc-600 h-52 grid place-content-center text-4xl rounded-md font-domine">El banner</div>
+
+           
+            <div class="grid grid-cols-8 gap-3 mt-5">
+                <!-- FEATURED ES DE 2 -->
+                <div class="col-span-8 md:col-span-4 bg-zinc-600 rounded-md grid place-content-center h-32">
+                    Aquí van una de dos
+                </div>
+                <div class="col-span-8 md:col-span-4 bg-zinc-600 rounded-md grid place-content-center h-32">
+                    Aquí van dos de dos
+                </div>
+             
+                <!-- From the Firehose ES DE 2 desiguales -->
+                <div class=" col-span-8 md:col-span-6 bg-zinc-700 grid place-content-center ">
+                    Acá va la columna grande izquierda
+                </div>
+                <div class=" col-span-8 md:col-span-2 bg-zinc-500 rounded p-4">
+                    <div class="destacado">
+                    <h3>About</h3>
+                    <p>
+                        Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.
+                    </p>
+                    </div>
+                </div>
+   
+
+
+            </div>
+        </main>
+      </div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+      
+</body>
+</html>
