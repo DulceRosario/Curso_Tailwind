@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{ @apply flex flex-col bg-tw_body-100 text-white  font-faustina }
+    #container{ @apply w-full }
+    .destacado > h3{ @apply text-xl font-bold }
+    .destacado > p{ @apply text-[12px] }
+    
+    
+}
+
+
+@layer components{
+
+  .topnav { @apply flex justify-center overflow-hidden  bg-transparent;}
+  
+  .topnav a { @apply  block hover:bg-tw-main-100 text-white hover:text-black text-center py-[14px] px-[16px] no-underline text-[17px]  active:text-white }
+  
+  .topnav a.active{ @apply bg-tw-main-400 }
+  .topnav a:not(:first-child) { @apply hidden;}
+  .topnav a.icon { @apply float-right block md:invisible }
+  
+  .topnav.responsive { @apply flex-col;}
+  
+  .topnav.responsive .icon { @apply absolute right-0 top-[67px]}
+  
+  .topnav.responsive a { @apply block text-center ; }
+  
+  .topnav a:not(:first-child) { @apply md:block }
+  
+}
